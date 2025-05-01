@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a1f44, #001f3f);
+    color: #e0e6f0;
+    margin: 0;
+    padding-top: 60px; /* space for fixed navbar */
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #001a3d;
+    overflow: hidden;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #66b2ff;
+}
+
+.navbar a.active {
+    color: #66b2ff;
+    border-bottom: 2px solid #66b2ff;
+}
+
+.blog-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.blog-post {
+    background: linear-gradient(145deg, #00264d, #003366);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    padding: 25px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 102, 204, 0.8);
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #a8c0ff;
+    border-bottom: 3px solid #66b2ff;
+    padding-bottom: 8px;
+}
+
+.blog-excerpt {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d0d8ff;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.blog-footer {
+    font-size: 0.9rem;
+    color: #99aaff;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Form and input styles for login/register pages */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 40px auto;
+    background: #001f3f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    color: #e0e6f0;
+}
+
+input[type="text"],
+input[type="username"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #003366;
+    color: #cbd5e1;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="username"]:focus,
+input[type="password"]:focus {
+    background: #004080;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #66b2ff;
+    color: #001f3f;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3399ff;
+}
+
+/* New styles for buttons in navbar and add post */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #66b2ff;
+    color: #001f3f;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3399ff;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto 10px auto;
+    padding: 0 20px;
+}
+
+.add-post-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+}
+
+.welcome-message {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #a8c0ff;
+}
